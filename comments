@@ -6,3 +6,5 @@ Looking at fatal car accidents to see:
   Which states
   
 Machine Learning to tell a user how likely a fatal crash is based off what kind of car they want to purchase, what state they live in, what time of the year it is
+
+3/21/22 - Use Kaggle data and let Machine learning determine most frequent accidents due to weather, location, time of day, etc.
