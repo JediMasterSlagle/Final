@@ -1,3 +1,4 @@
+Need Hypothesis,   Comparing fatal accidents to total accidents based on car make and model as well as weather patterns of the year
 
 
 Looking at fatal car accidents to see:
@@ -11,3 +12,5 @@ Machine Learning to tell a user how likely a fatal crash is based off what kind 
  - check to see how many records for each year
     - convert start time column to extract the year
     - count unique year values to make sure we aren't getting rid of one year that has most of the records
+=======
+
