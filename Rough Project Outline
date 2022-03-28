@@ -1,0 +1,10 @@
+## Final Project Outline
+
+Download Data Files here -> https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/CRSS/
+Using accdient.csv, person.csv, and weather.csv
+
+# Machine Learning
+Fatal Accidents vs Non Fatal Accident 
+Using a Classification model
+
+Based off the following factors:weather, make, model, weight of car, region, light condition, month
