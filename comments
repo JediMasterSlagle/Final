@@ -1,3 +1,16 @@
 Need Hypothesis,   Comparing fatal accidents to total accidents based on car make and model as well as weather patterns of the year
 
-are 'luxary cars' safer?   or we can state that they are and graph the results by states and by types of vehicles with most fatal accidents?  and then maybe also compare the amount of brands purchased to accidents with the brand of car.?  Jossh
+
+Looking at fatal car accidents to see:
+  Which car make and models have the most fatal accidents
+  What time of the year (seasons)
+  Which states
+  
+Machine Learning to tell a user how likely a fatal crash is based off what kind of car they want to purchase, what state they live in, what time of the year it is
+
+3/21/22 - Use Kaggle data and let Machine learning determine most frequent accidents due to weather, location, time of day, etc.
+ - check to see how many records for each year
+    - convert start time column to extract the year
+    - count unique year values to make sure we aren't getting rid of one year that has most of the records
+=======
+
