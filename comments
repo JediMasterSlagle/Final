@@ -13,4 +13,5 @@ Machine Learning to tell a user how likely a fatal crash is based off what kind 
     - convert start time column to extract the year
     - count unique year values to make sure we aren't getting rid of one year that has most of the records
 =======
+are 'luxary cars' safer?   or we can state that they are and graph the results by states and by types of vehicles with most fatal accidents?  and then maybe also compare the amount of brands purchased to accidents with the brand of car.?  Jossh
 
