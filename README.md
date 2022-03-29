@@ -9,7 +9,7 @@
 
 
 ## Communication Protocol
-Team communicates daily via Slack messages for progress updates; meets weekly M and W (Th additionally if necessary)
+Team communicates daily via Slack messages for progress updates on individual components; meets weekly via Zoom for group components, brain storming, problem solving, coding, etc. 
 
 
 ## Topic
