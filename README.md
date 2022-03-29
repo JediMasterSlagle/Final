@@ -1,5 +1,11 @@
 # Final
 
+## Team
+Josh Slagle
+Darlene Penn
+Sierra Dubois
+
+
 ## Topic
 Our topic will be surrounding automotive collision data, and predicting accidents based on a number of common conditions. We will analyze whether or not certain environmental conditions contribute to the frequency and/or severity of automotive accidents in the U.S.  We will be looking to see what impact the conditions play in how likely an accident is to result in fatalities, based on the weather, make & model of the vehicle, weight of the car, geographical region of the location, the light conditions and the time of the year (in months). We will exam the years of 2016-2020 to ensure we have a large enough data set to train the machine learning model. 
 
