@@ -1,9 +1,15 @@
 # Final
 
-## Team
-- Josh Slagle
-- Darlene Penn
-- Sierra Dubois
+## Team Introduction
+- Josh Slagle, jslagle1982@yahoo.com
+
+- Darlene Penn, dyvonnep@gmail.com
+
+- Sierra Dubois, sdubois@kent.edu
+
+
+## Communication Protocol
+Team communicates daily via Slack messages for progress updates; meets weekly M and W (Th additionally if necessary)
 
 
 ## Topic
