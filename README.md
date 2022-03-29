@@ -1,9 +1,9 @@
 # Final
 
 ## Team
-Josh Slagle
-Darlene Penn
-Sierra Dubois
+- Josh Slagle
+- Darlene Penn
+- Sierra Dubois
 
 
 ## Topic
