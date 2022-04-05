@@ -1,8 +1,3 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- Link to schema: https://app.quickdatabasediagrams.com/#/d/g1CFD8
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
-
-
 CREATE TABLE "Accidents19" (
     "CASENUM" int   NOT NULL,
     "REGIONNAME" int   NOT NULL,
