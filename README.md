@@ -1,6 +1,6 @@
 # Final
 [Google Slides] (https://docs.google.com/presentation/d/1VzghETdmlK60Soo-7PjKGphlrD8UF2DXXCA79tSqfJ0/edit?usp=sharing)<br>
-[Tableau Workbook]  (https://github.com/JediMasterSlagle/Final/blob/main/Resources/Book2.twb)
+[Tableau Workbook]  (https://public.tableau.com/app/profile/josh.slagle/viz/Book2_16503244851150/Dashboard1?publish=yes)
 
 ## Team Introduction
 - Josh Slagle, jslagle1982@yahoo.com
