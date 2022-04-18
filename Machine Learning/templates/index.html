@@ -1,0 +1,65 @@
+<html>
+<body>
+    <h3>Accident Fatality Prediction</h3>
+ 
+<div>
+  <form action="/result" method="POST">
+    <label for="region">Region</label>
+    <select id="region" name="region">
+      <option value="0">Midwest</option>
+      <option value="1">Northeast</option>
+      <option value="2">South</option>
+      <option value="3">West</option>
+    </select>
+    <br>
+    <label for="month">Month</label>
+    <select id="month" name="month">
+      <option value="4">Jan</option>
+      <option value="3">Feb</option>
+      <option value="7">Mar</option>
+      <option value="0">Apr</option>
+      <option value="8">May</option>
+      <option value="6">June</option>
+      <option value="5">July</option>
+      <option value="1">Aug</option>
+      <option value="11">Sept</option>
+      <option value="10">Oct</option>
+      <option value="9">Nov</option>
+      <option value="2">Dec</option>
+    </select>
+    <br>
+    <label for="light_condtion">Light Condition</label>
+    <select id="light_condtion" name="light_condtion">
+      <option value="0">Dark - Lighted</option>
+      <option value="1">Dark - Not Lighted</option>
+      <option value="2">Dark - Unknown Lighting</option>
+      <option value="3">Dawn</option>
+      <option value="4">Daylight</option>
+      <option value="5">Dusk</option>
+      <option value="6">Not Reported</option>
+      <option value="7">Other</option>
+      <option value="8">Unknown</option>
+    </select>
+    <br>
+    <label for="weather">Weather</label>
+    <select id="weather" name="weather">
+      <option value="0">Blowing Sand, Soil, or Dirt</option>
+      <option value="1">Blowing Snow</option>
+      <option value="2">Clear</option>
+      <option value="3">Cloudy</option>
+      <option value="4">Fog, Smog, or Smoke</option>
+      <option value="5">Freezing rain or drizzle</option>
+      <option value="6">Not Reported</option>
+      <option value="7">Other</option>
+      <option value="8">Rain</option>
+      <option value="9">Unknown</option>
+      <option value="10">Severe Crosswinds</option>
+      <option value="11">Sleet or Hail</option>
+      <option value="12">Snow</option>
+    </select>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
