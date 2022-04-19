@@ -88,10 +88,13 @@ Started with a Classification Model
 Due to the the majority of accidents being non-fatal, are dataset is greatly skewed. Thus we decided to test models that would help balance the data. See below the results of multiple models.
 
 #### Native Random Oversampling Results
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/native_random_oversampling.png) 
 
 #### Smote Oversampling Results
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/smote_oversampling.png) 
 
 #### Undersampling Results
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/undersampling.png) 
 
 #### Combination Sampling (Over and Under) Results
 
