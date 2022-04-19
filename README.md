@@ -1,7 +1,7 @@
 # Final
-[Google Slides] (https://docs.google.com/presentation/d/1VzghETdmlK60Soo-7PjKGphlrD8UF2DXXCA79tSqfJ0/edit?usp=sharing)
 
-[Tableau Workbook] (https://public.tableau.com/app/profile/josh.slagle/viz/Book2_16503244851150/Dashboard1?publish=yes)
+[Google Slides] (https://docs.google.com/presentation/d/1VzghETdmlK60Soo-7PjKGphlrD8UF2DXXCA79tSqfJ0/edit?usp=sharing)<br>
+[Tableau Workbook]  (https://public.tableau.com/app/profile/josh.slagle/viz/Book2_16503244851150/Dashboard1?publish=yes)
 
 
 ## Team Introduction
@@ -13,7 +13,7 @@
 
 
 ## Communication Protocol
-Team communicates daily via Slack messages for progress updates; meets weekly M and W (Th additionally if necessary)
+Team communicates daily via Slack messages for progress updates on individual components; meets weekly via Zoom for group components, brain storming, problem solving, coding, etc. 
 
 
 ## Topic
