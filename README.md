@@ -47,13 +47,13 @@ https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/CRSS/2020/
 ### Transform Data
 
 #### accident2019 data transformation
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_accident2019_data.png =250x250) 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_accident2019_data.png) 
 #### accident2020 data transformation
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_accident2020_data.png =250x250)
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_accident2020_data.png )
 #### vehicle2019 data transformation
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_vehicle2019_data.png =250x250) 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_vehicle2019_data.png) 
 #### vehicle2020 data transformation
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_vehicle2020_data.png =250x250) 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_vehicle2020_data.png) 
 
 ## Load Data into Postgresql Database
 
