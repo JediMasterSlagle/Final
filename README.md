@@ -1,4 +1,4 @@
-# Final
+# Predicting Fatal Accidents 
 [Google Slides] (https://docs.google.com/presentation/d/1VzghETdmlK60Soo-7PjKGphlrD8UF2DXXCA79tSqfJ0/edit?usp=sharing)<br>
 [Tableau Workbook]  (https://public.tableau.com/app/profile/josh.slagle/viz/AccidentDataFinal/Story1?publish=yes)
 
@@ -43,8 +43,12 @@ https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/CRSS/2019/
 https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/CRSS/2020/
 
   - We used accident.csv and vehicle.csv for our analysis 
+  - We narrowed down the files to inlcude only columns we believe could likely affect car crash fatalities 
 
 ### Transform Data
+
+  - Outcome column was created from the MAX_SEV column 
+  - If MAX_SEV = 4 (Fatal Crash), then outcome = 1 
 
 #### accident2019 data transformation
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_accident2019_data.png) 
@@ -55,21 +59,37 @@ https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/CRSS/2020/
 #### vehicle2020 data transformation
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_vehicle2020_data.png) 
 
-## Load Data into Postgresql Database
+### Load Data into Postgresql Database
 
-### Create fatal_accident_db in pgAdmin
+#### Create fatal_accident_db in pgAdmin
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ERD/fatal_accident_db.png) 
 
-### Create accident2019 and accident2020 tables
+#### Create accident2019 and accident2020 tables
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ERD/create_accident_tables.png) 
 
-### Create vehicle2019 and vehicle2020 tables
+#### Create vehicle2019 and vehicle2020 tables
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ERD/create_vehicle_tables.png) 
 
-### ERD 
+#### ERD 
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ERD/fatal_accident_db_ERD.png) 
 
 ### Upload Data
+
+## Machine Learning Process
+
+X: outcome
+y: region, month, light_condtion, weather , make_and_model, year
+
+Started with a Classification Model
+
+#### Classfication Model Results
+![alt text](https://github.com/JediMasterSlagle/Final/tree/main/Machine%20Learning/images) 
+
+Due to the the majority of accidents being non-fatal, are dataset is greatly skewed. Thus we decided to test models that would help balance the data.
+
+
+
+
 
 ## Database
 
