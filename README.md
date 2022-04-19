@@ -102,6 +102,13 @@ Due to the the majority of accidents being non-fatal, are dataset is greatly ske
 
 #### BorderlineSMOTE Results
 
+## Creating Flask App for Model
+The purpose of this app is to give an interactive experience with our machine learning model. Due to project time constraints, we created a new model that didn't include make_and_model and year. Both variables have too many options to write into the html code (make_and_model with 500+ and year 90+). 
+
+
+## Deploy App using Heroku
+
+
 
 ## Database
 
