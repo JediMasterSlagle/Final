@@ -34,26 +34,26 @@ We hope to answer some of the following questions with our analysis:
 
 ## ETL Process
 
-## Extract Data
-### Data was taken from NHTSA website
+### Extract Data
+  - Data was taken from NHTSA website
 
-#### Link 2019 Data
+#### Link to 2019 Data
 https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/CRSS/2019/
-#### Link 2020 Data
+#### Link to 2020 Data
 https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/CRSS/2020/
 
-### We used accident.csv and vehicle.csv for our analysis 
+  - We used accident.csv and vehicle.csv for our analysis 
 
-## Transform Data
+### Transform Data
 
-### accident2019 data
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_accident2019_data.png) 
-### accident2020 data
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_accident2020_data.png)
-### vehicle2019 data
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_vehicle2019_data.png) 
-### vehicle2020 data
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_vehicle2020_data.png) 
+#### accident2019 data transformation
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_accident2019_data.png =250x250) 
+#### accident2020 data transformation
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_accident2020_data.png =250x250)
+#### vehicle2019 data transformation
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_vehicle2019_data.png =250x250) 
+#### vehicle2020 data transformation
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_vehicle2020_data.png =250x250) 
 
 ## Load Data into Postgresql Database
 
