@@ -105,16 +105,13 @@ Due to the the majority of accidents being non-fatal, are dataset is greatly ske
 ## Creating Flask App for Model
 The purpose of this app is to give an interactive experience with our machine learning model. Due to project time constraints, we created a new model that didn't include make_and_model and year. Both variables have too many options to write into the html code (make_and_model with 500+ and year 90+). 
 
-
 ## Deploy App using Heroku
 
+Link to App: https://car-accident-prediction.herokuapp.com/
 
+## Dashboard 
 
-## Database
+### Dashboard Rough Draft
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Visuals/Dashboard%20Sketch.png) 
 
-Our database was created by a join of 4 .csv files from the NHTSA.  (Accidents 2019, Accidents 2020, Vehicles 2019 and Vehicles 2020. After dropping unneeded columns, and adding a column for the outcome of "Fatal" vs "Non-Fatal", we produced a database to use with our machine learning model. 
-
-## Machine Learning Model
-
-In order to compensate for the skewed data (the vast majority of accidents are non-fatal) we used the Balanced Random Forest Classifier to attemp to predict whether an accident would be fatal or not, based off known conditions of time of day, month of year, region of the U.S., light conditions and weather conditions.
 
