@@ -1,6 +1,6 @@
 # Final
 [Google Slides] (https://docs.google.com/presentation/d/1VzghETdmlK60Soo-7PjKGphlrD8UF2DXXCA79tSqfJ0/edit?usp=sharing)<br>
-[Tableau Workbook]  (https://public.tableau.com/app/profile/josh.slagle/viz/Book2_16503244851150/Dashboard1?publish=yes)
+[Tableau Workbook]  (https://public.tableau.com/app/profile/josh.slagle/viz/AccidentDataFinal/Story1?publish=yes)
 
 ## Team Introduction
 - Josh Slagle, jslagle1982@yahoo.com
@@ -31,4 +31,12 @@ We hope to answer some of the following questions with our analysis:
 - Are some parts of the country less safe for driving based on the number of fatal accidents occurring annually, and what elements are influencing that fatal accident rate?
 - Can we predict whether an accident will be fatal if we have the given conditions at that moment, like the make and model of the car, the current weather, and the location of the driver and time of the year?
 - Which factors increase the rate of fatality vs. non-fatal accidents?
+
+## Database
+
+Our database was created by a join of 4 .csv files from the NHTSA.  (Accidents 2019, Accidents 2020, Vehicles 2019 and Vehicles 2020. After dropping unneeded columns, and adding a column for the outcome of "Fatal" vs "Non-Fatal", we produced a database to use with our machine learning model. 
+
+## Machine Learning Model
+
+In order to compensate for the skewed data (the vast majority of accidents are non-fatal) we used the Balanced Random Forest Classifier to attemp to predict whether an accident would be fatal or not, based off known conditions of time of day, month of year, region of the U.S., light conditions and weather conditions.
 
