@@ -85,10 +85,19 @@ Started with a Classification Model
 #### Classfication Model Results
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/classification_model.png) 
 
-Due to the the majority of accidents being non-fatal, are dataset is greatly skewed. Thus we decided to test models that would help balance the data.
+Due to the the majority of accidents being non-fatal, are dataset is greatly skewed. Thus we decided to test models that would help balance the data. See below the results of multiple models.
 
+#### Native Random Oversampling Results
 
+#### Smote Oversampling Results
 
+#### Undersampling Results
+
+#### Combination Sampling (Over and Under) Results
+
+#### Balanced Random Forest Classifier Results
+
+#### BorderlineSMOTE Results
 
 
 ## Database
