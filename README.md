@@ -77,13 +77,13 @@ https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/CRSS/2020/
 
 ## Machine Learning Process
 
-X: outcome
+X: outcome /n
 y: region, month, light_condtion, weather , make_and_model, year
 
 Started with a Classification Model
 
 #### Classfication Model Results
-![alt text](https://github.com/JediMasterSlagle/Final/tree/main/Machine%20Learning/images) 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/classification_model.png) 
 
 Due to the the majority of accidents being non-fatal, are dataset is greatly skewed. Thus we decided to test models that would help balance the data.
 
