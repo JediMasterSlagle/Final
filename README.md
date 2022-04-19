@@ -32,6 +32,45 @@ We hope to answer some of the following questions with our analysis:
 - Can we predict whether an accident will be fatal if we have the given conditions at that moment, like the make and model of the car, the current weather, and the location of the driver and time of the year?
 - Which factors increase the rate of fatality vs. non-fatal accidents?
 
+## ETL Process
+
+## Extract Data
+### Data was taken from NHTSA website
+
+#### Link 2019 Data
+https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/CRSS/2019/
+#### Link 2020 Data
+https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/CRSS/2020/
+
+### We used accident.csv and vehicle.csv for our analysis 
+
+## Transform Data
+
+### accident2019 data
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_accident2019_data.png) 
+### accident2020 data
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_accident2020_data.png)
+### vehicle2019 data
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_vehicle2019_data.png) 
+### vehicle2020 data
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_vehicle2020_data.png) 
+
+## Load Data into Postgresql Database
+
+### Create fatal_accident_db in pgAdmin
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ERD/fatal_accident_db.png) 
+
+### Create accident2019 and accident2020 tables
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ERD/create_accident_tables.png) 
+
+### Create vehicle2019 and vehicle2020 tables
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ERD/create_vehicle_tables.png) 
+
+### ERD 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ERD/fatal_accident_db_ERD.png) 
+
+### Upload Data
+
 ## Database
 
 Our database was created by a join of 4 .csv files from the NHTSA.  (Accidents 2019, Accidents 2020, Vehicles 2019 and Vehicles 2020. After dropping unneeded columns, and adding a column for the outcome of "Fatal" vs "Non-Fatal", we produced a database to use with our machine learning model. 
