@@ -101,7 +101,7 @@ Bad weather conditions do not equate to more accidents, as shown below many happ
 
 ## Machine Learning Process
 
-Started with a Classification Model since we are classifying our data into two categories: fatal (1) or non-fatal (0)
+Started with a Classification Model (Logistic Regression) since we are classifying our data into two categories: fatal (1) or non-fatal (0)
 
 Split dataset using scikit-learn's train_test_split()
 X: outcome <br />
