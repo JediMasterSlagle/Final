@@ -85,6 +85,11 @@ We hope to answer some of the following questions with our analysis:
 
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL/images/data_upload.png) 
 
+## Exploratory Analysis
+
+We noticed some trends with the data right away. For example, the vast majority of the reported acccidents, were not fatal and only resulted in property damage.
+![Frequency of Severity}(Visuals/bar, comparison of severity.png)
+
 ## Machine Learning Process
 
 X: outcome <br />
