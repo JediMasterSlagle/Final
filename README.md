@@ -84,13 +84,13 @@ Bad weather conditions do not equate to more accidents, as shown below many happ
 ### *Load* Data into Postgresql Database
 
 #### Create fatal_accident_db in pgAdmin
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Database/ERD/fatal_accident_db.png) 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Database/Database%20Schema/fatal_accident_db.png) 
 
 #### Create accident2019 and accident2020 tables
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Database/ERD/create_accident_tables.png) 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Database/Database%20Schema/create_accident_tables.png) 
 
 #### Create vehicle2019 and vehicle2020 tables
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Database/ERD/create_vehicle_tables.png) 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Database/Database%20Schema/create_vehicle_tables.png) 
 
 #### ERD 
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Database/ERD/fatal_accident_db_ERD.png) 
@@ -107,29 +107,29 @@ X: outcome <br />
 y: region, month, light_condtion, weather, make_and_model, year
 
 #### Classfication Model Results
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/classification_model.png) 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/Testing%20Models/images/classification_model.png) 
 
 This model's accuracy is 98% but that simply due to the fact that are dataset is greatly imbalanced. Majority of accidents will be non-fatal, and model recognizes that and will cleaverly always predict 0 to achieve high accuracy. 
 
 Because of this imbalance, we decided to test models that would help balance the data. See below the results of multiple models on our dataset.
 
 #### Native Random Oversampling Results
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/native_random_oversampling.png) 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/Testing%20Models/images/native_random_oversampling.png) 
 
 #### Smote Oversampling Results
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/smote_oversampling.png) 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/Testing%20Models/images/smote_oversampling.png) 
 
 #### Undersampling Results
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/undersampling.png) 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/Testing%20Models/images/undersampling.png) 
 
 #### Combination Sampling (Over and Under) Results
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/combo_sampling.png)
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/Testing%20Models/images/combo_sampling.png)
 
 #### BalancedRandomForestClassifier Results
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/random_forest.png)
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/Testing%20Models/images/random_forest.png)
 
 #### BorderlineSMOTE Results
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/borderlinesmote.png)
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/Testing%20Models/images/borderlinesmote.png)
 
 ## Final Model Decision
 
