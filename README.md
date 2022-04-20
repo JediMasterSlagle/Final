@@ -50,34 +50,34 @@ We hope to answer some of the following questions with our analysis:
   - If MAX_SEV = 4 (Fatal Crash), then outcome = 1 
 
 #### accident2019 data transformation
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_accident2019_data.png) 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL/images/transform_accident2019_data.png) 
 #### accident2020 data transformation
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_accident2020_data.png )
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL/images/transform_accident2020_data.png )
 #### vehicle2019 data transformation
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_vehicle2019_data.png) 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL/images/transform_vehicle2019_data.png) 
 #### vehicle2020 data transformation
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL%20Process/images/transform_vehicle2020_data.png) 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL/images/transform_vehicle2020_data.png) 
 
 ### Load Data into Postgresql Database
 
 #### Create fatal_accident_db in pgAdmin
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ERD/fatal_accident_db.png) 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Database/ERD/fatal_accident_db.png) 
 
 #### Create accident2019 and accident2020 tables
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ERD/create_accident_tables.png) 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Database/ERD/create_accident_tables.png) 
 
 #### Create vehicle2019 and vehicle2020 tables
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ERD/create_vehicle_tables.png) 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Database/ERD/create_vehicle_tables.png) 
 
 #### ERD 
-![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ERD/fatal_accident_db_ERD.png) 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Database/ERD/fatal_accident_db_ERD.png) 
 
 ### Upload Data
 
 ## Machine Learning Process
 
-X: outcome /n
-y: region, month, light_condtion, weather , make_and_model, year
+X: outcome <br />
+y: region, month, light_condtion, weather, make_and_model, year
 
 Started with a Classification Model
 
@@ -97,12 +97,21 @@ Due to the the majority of accidents being non-fatal, are dataset is greatly ske
 
 #### Combination Sampling (Over and Under) Results
 
-#### Balanced Random Forest Classifier Results
+#### BalancedRandomForestClassifier Results
 
 #### BorderlineSMOTE Results
 
 ## Creating Flask App for Model
-The purpose of this app is to give an interactive experience with our machine learning model. Due to project time constraints, we created a new model that didn't include make_and_model and year. Both variables have too many options to write into the html code (make_and_model with 500+ and year 90+). 
+The purpose of this app is to give an interactive experience with our machine learning model. Due to project time constraints, we created a new model that didn't include make_and_model and year. Both variables have too many options to write into the html code (make_and_model with 500+ and year 90+). We still used the BalancedRandomForestClassifier model for the heroku app.
+
+X: outcome <br />
+y: region, month, light_condtion, weather
+
+#### BalancedRandomForestClassifier Results
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/Final%20Model/images/final_model_heroku_app_results.png)
+
+#### Save the Model using Pickle
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/Final%20Model/images/pickle.png)
 
 ## Deploy App using Heroku
 
