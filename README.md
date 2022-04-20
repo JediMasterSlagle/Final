@@ -43,8 +43,8 @@ We hope to answer some of the following questions with our analysis:
 
   - We used accident.csv and vehicle.csv for our analysis 
   - Narrowed down the files to inlcude only columns we believe could likely affect car crash fatalities 
-    - From the accident.csv, region, urbanicity (rural or urban), month, year, day of the week, light condion, weather
-    - From the vehicle.csv, make and model, car year
+    - From the accident.csv, accident case number, region, urbanicity (rural or urban), month, year, day of the week, light condion, weather
+    - From the vehicle.csv, accident case number, make and model, car year
     - Note: we did not end up using every variable in our database in our final analysis
   - Joined accident.csv and vehicle.csv on accident case number
 
@@ -103,12 +103,14 @@ Bad weather conditions do not equate to more accidents, as shown below many happ
 X: outcome <br />
 y: region, month, light_condtion, weather, make_and_model, year
 
-Started with a Classification Model since we are dealing with only categorical data
+Started with a Classification Model since we are classifying our data into two categories: fatal (1) or non-fatal (0)
 
 #### Classfication Model Results
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/classification_model.png) 
 
-Due to the the majority of accidents being non-fatal, are dataset is greatly skewed. Thus we decided to test models that would help balance the data. See below the results of multiple models.
+This model's accuracy is 98% but that simply due to the fact that are dataset is greatly imbalanced. Majority of accidents will be non-fatal, and model recognizes that and will cleaverly always predict 0 to achieve high accuracy. 
+
+Because of this imbalance, we decided to test models that would help balance the data. See below the results of multiple models on our dataset.
 
 #### Native Random Oversampling Results
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/native_random_oversampling.png) 
@@ -142,7 +144,20 @@ y: region, month, light_condtion, weather
 #### Save the Model using Pickle
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/Final%20Model/images/pickle.png)
 
+### Create app.py and HTML files
+
+Connect to saved model using Flask in app.py. Created two webpages: index.html (ask for input from user) and results.html (contains prediction).
+
 ## Deploy App using Heroku
+
+#### Pushed app to Heroku using git
+Steps in Process:
+  - Installed Heroku CLI in virtual environment
+  - Installed gunicorn in virtual environment and created Procfile in app root directory (this is how the app and Heroku communicate)
+  - Created requirements.txt and Pipfile in root directory
+  - Initialized git in virtual environment
+  - Add contents in directory to git
+  - Commit and push to Heroku app 
 
 Link to App: https://car-accident-prediction.herokuapp.com/
 
