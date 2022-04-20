@@ -113,5 +113,7 @@ Link to App: https://car-accident-prediction.herokuapp.com/
 ### Dashboard Rough Draft
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Visuals/Dashboard%20Sketch.png) 
 
+
+### Dashboard Final Version
 ![final dashboard](Visuals/Dashboard.png)
 
