@@ -148,9 +148,12 @@ Link to App: https://car-accident-prediction.herokuapp.com/
 
 ## Dashboard 
 
+We used Tableau for our final dashboard.  We originally invisioned a geographical map of the United States that users could click onto a specific state to get a drill down of the accident data. 
+
 ### Dashboard Rough Draft
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Visuals/Dashboard%20Sketch.png) 
 
+We discovered that our data had the accident data grouped by region instead, and there was no way to cleanly separate each accident report into a specific state.  We decided to use the regional information as our selection tool on the dashboard so that all the charts update when a specific region is selected. 
 
 ### Dashboard Final Version
 ![final dashboard](Visuals/Dashboard.png)
