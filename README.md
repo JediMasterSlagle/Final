@@ -103,13 +103,14 @@ Bad weather conditions do not equate to more accidents, as shown below many happ
 
 Started with a Classification Model since we are classifying our data into two categories: fatal (1) or non-fatal (0)
 
+Split dataset using scikit-learn's train_test_split()
 X: outcome <br />
 y: region, month, light_condtion, weather, make_and_model, year
 
 #### Classfication Model Results
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/Testing%20Models/images/classification_model.png) 
 
-This model's accuracy is 98% but that simply due to the fact that are dataset is greatly imbalanced. Majority of accidents will be non-fatal, and model recognizes that and will cleaverly always predict 0 to achieve high accuracy. 
+This model's accuracy is 98% but that simply due to the fact that are dataset is greatly imbalanced. Majority of accidents will be non-fatal, and model recognizes that and will cleverly always predict 0 to achieve high accuracy. 
 
 Because of this imbalance, we decided to test models that would help balance the data. See below the results of multiple models on our dataset.
 
