@@ -33,6 +33,19 @@ We hope to answer some of the following questions with our analysis:
 - Can we predict whether an accident will be fatal if we have the given conditions at that moment, like the make and model of the car, the current weather, and the location of the driver and time of the year?
 - Which factors increase the rate of fatality vs. non-fatal accidents?
 
+## Exploratory Analysis
+
+### Initial Findings
+We noticed some trends with the data right away. For example, the vast majority of the reported acccidents were not fatal and only resulted in property damage. Since we were only interested in fatal vs. non-fatal, all non-fatal accidents were grouped together with our outcomes column.
+![Frequency of Severity](/Visuals/bar-comparison-of-severity.png)
+
+Many accidents happen during the holiday months.
+
+![By Month](/Visuals/by-latest-year-available.png)
+
+Bad weather conditions do not equate to more accidents, as shown below many happen during clear skies and fair weather.
+![By Weather](/Visuals/weather-at-time-of-accident.png)
+
 ## ETL Process
 
 ### Extract Data
@@ -48,26 +61,27 @@ We hope to answer some of the following questions with our analysis:
     - Note: we did not end up using every variable in our database in our final analysis
   - Joined accident.csv and vehicle.csv on accident case number
 
-### Transform Data
+### **Transform** Data
 
   - Outcome column was created from the MAX_SEV column 
   - If MAX_SEV = 4 (Fatal Crash), then outcome = 1 
+
+- For accident csvs, removed light condition and weather options that were unknown or weren't specifically reported
 
 #### accident2019 data transformation
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL/images/transform_accident2019_data.png) 
 #### accident2020 data transformation
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL/images/transform_accident2020_data.png )
 
-  - For accident csvs, removed light condition and weather options that were unknown or weren't specifically reported
+- For vehicle csvs, removed two years that are not real
 
 #### vehicle2019 data transformation
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL/images/transform_vehicle2019_data.png) 
 #### vehicle2020 data transformation
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL/images/transform_vehicle2020_data.png) 
 
-  - For vehicle csvs, removed two years that are not real
 
-### Load Data into Postgresql Database
+### **Load** Data into Postgresql Database
 
 #### Create fatal_accident_db in pgAdmin
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Database/ERD/fatal_accident_db.png) 
@@ -81,29 +95,16 @@ We hope to answer some of the following questions with our analysis:
 #### ERD 
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Database/ERD/fatal_accident_db_ERD.png) 
 
-### Upload Data
+### **Load** Data
 
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL/images/data_upload.png) 
 
-## Exploratory Analysis
-
-### Initial Findings
-We noticed some trends with the data right away. For example, the vast majority of the reported acccidents were not fatal and only resulted in property damage. Since we were only interested in fatal vs. non-fatal, all non-fatal accidents were grouped together with our outcomes column.
-![Frequency of Severity](/Visuals/bar-comparison-of-severity.png)
-
-Many accidents happen during the holiday months.
-
-![By Month](/Visuals/by-latest-year-available.png)
-
-Bad weather conditions do not equate to more accidents, as shown below many happen during clear skies and fair weather.
-![By Weather](/Visuals/weather-at-time-of-accident.png)
-
 ## Machine Learning Process
+
+Started with a Classification Model since we are classifying our data into two categories: fatal (1) or non-fatal (0)
 
 X: outcome <br />
 y: region, month, light_condtion, weather, make_and_model, year
-
-Started with a Classification Model since we are classifying our data into two categories: fatal (1) or non-fatal (0)
 
 #### Classfication Model Results
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/classification_model.png) 
@@ -133,12 +134,12 @@ Because of this imbalance, we decided to test models that would help balance the
 ## Final Model Decision
 
 ## Creating Flask App for Model
-The purpose of this app is to give an interactive experience with our machine learning model. Due to project time constraints, we created a new model that didn't include make_and_model and year. Both variables have too many options to write into the html code (make_and_model with 500+ and year 90+). We still used the BalancedRandomForestClassifier model for the heroku app.
+The purpose of this app is to give an interactive experience with our machine learning model. Due to project time constraints, we created a new model that didn't include make_and_model and year. Both variables have too many options to write into the html code (make_and_model with 500+ and year 90+). We still used the Native Random Oversampling model for the heroku app.
 
 X: outcome <br />
 y: region, month, light_condtion, weather
 
-#### BalancedRandomForestClassifier Results
+#### Native Random Oversampling Results
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/Final%20Model/images/final_model_heroku_app_results.png)
 
 #### Save the Model using Pickle
