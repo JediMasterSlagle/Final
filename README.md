@@ -107,10 +107,13 @@ Due to the the majority of accidents being non-fatal, are dataset is greatly ske
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/undersampling.png) 
 
 #### Combination Sampling (Over and Under) Results
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/combo_sampling.png)
 
 #### BalancedRandomForestClassifier Results
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/random_forest.png)
 
 #### BorderlineSMOTE Results
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/borderlinesmote.png)
 
 ## Final Model Decision
 
