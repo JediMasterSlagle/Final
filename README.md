@@ -112,7 +112,7 @@ y: region, month, light_condtion, weather, make_and_model, year
 #### Classfication Model Results
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/Testing%20Models/images/classification_model.png) 
 
-This model's accuracy is 98% but that simply due to the fact that are dataset is greatly imbalanced. Majority of accidents will be non-fatal, and the model recognizes that and will cleverly always predict 0 to achieve high accuracy. 
+This model's accuracy is 98% but that's simply due to the fact that are dataset is greatly imbalanced. Majority of accidents will be non-fatal, and the model recognizes that and will cleverly always predict 0 to achieve high accuracy. 
 
 Because of this imbalance, we decided to test models that would help balance the data. See below the results of multiple models on our dataset.
 
