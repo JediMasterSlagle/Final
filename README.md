@@ -76,7 +76,7 @@ We hope to answer some of the following questions with our analysis:
 
 ## Machine Learning Process
 
-X: outcome /n
+X: outcome <br />
 y: region, month, light_condtion, weather, make_and_model, year
 
 Started with a Classification Model
@@ -104,7 +104,7 @@ Due to the the majority of accidents being non-fatal, are dataset is greatly ske
 ## Creating Flask App for Model
 The purpose of this app is to give an interactive experience with our machine learning model. Due to project time constraints, we created a new model that didn't include make_and_model and year. Both variables have too many options to write into the html code (make_and_model with 500+ and year 90+). We still used the BalancedRandomForestClassifier model for the heroku app.
 
-X: outcome /n
+X: outcome <br />
 y: region, month, light_condtion, weather
 
 #### BalancedRandomForestClassifier Results
