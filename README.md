@@ -96,7 +96,7 @@ Many accidents happen during the holiday months.
 ![By Month](/Visuals/by-latest-year-available.png)
 
 Bad weather conditions do not equate to more accidents, as shown below many happen during clear skies and fair weather.
-![By Weather](/Visuals/weather%at%time%of%accident.png)
+![By Weather](/Visuals/weather-at-time-of-accident.png)
 
 ## Machine Learning Process
 
