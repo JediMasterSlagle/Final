@@ -87,8 +87,15 @@ We hope to answer some of the following questions with our analysis:
 
 ## Exploratory Analysis
 
+### Initial Findings
 We noticed some trends with the data right away. For example, the vast majority of the reported acccidents were not fatal and only resulted in property damage. Since we were only interested in fatal vs. non-fatal, all non-fatal accidents were grouped together with our outcomes column.
 ![Frequency of Severity](/Visuals/bar-comparison-of-severity.png)
+
+Many accidents happen during the holiday months
+![By Month](/Visuals/by-latest-year-available.png)
+
+Bad weather conditions do not equate to more accidents, as shown below many happen during clear skies and fair weather.
+[By Weather](/Visuals/weather at time of accident.png)
 
 ## Machine Learning Process
 
