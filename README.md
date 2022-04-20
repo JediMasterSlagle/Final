@@ -144,7 +144,7 @@ Because of this imbalance, we decided to test models that would help balance the
 
 After reviewing the results of the models, it came down to choosing either the BalancedRandomForestClassifier model or Native Random Oversampling model. Both models have similar accuracy scores (around 62-63%). 
 
-We decided to go with the **BalancedRandomForestClassifier** model due to the recall score for fatal car accidents being higher compared to the Native Random Oversampling model. Recall/sensitivity calculates how many of the Actual Positives our model captures. If our model is going to predict if someone gets into a fatal accident or not, then having high sensitivity is very important. 
+We decided to go with the **BalancedRandomForestClassifier** model due to the recall score for fatal car accidents being higher at 58% compared to the Native Random Oversampling model at 55%. Recall/sensitivity calculates how many of the Actual Positives our model captures. If our model is going to predict if someone gets into a fatal accident or not, then having high sensitivity is very important. 
 
 ## Creating Flask App for Model
 The purpose of this app is to give an interactive experience with our machine learning model. Due to project time constraints, we created a new model that didn't include make_and_model and year. Both variables have too many options to write into the html code (make_and_model with 500+ and year 90+). We still used the BalancedRandomForestClassifier model for the heroku app after testing it against the Native Random Oversampling model. The results were still in favor of that model.
