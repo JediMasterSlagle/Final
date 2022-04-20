@@ -48,7 +48,7 @@ Bad weather conditions do not equate to more accidents, as shown below many happ
 
 ## ETL Process
 
-### Extract Data
+### *Extract* Data
   - Data was taken from NHTSA website
 
 #### [2019 Data](https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/CRSS/2019/)
@@ -61,7 +61,7 @@ Bad weather conditions do not equate to more accidents, as shown below many happ
     - Note: we did not end up using every variable in our database in our final analysis
   - Joined accident.csv and vehicle.csv on accident case number
 
-### **Transform** Data
+### *Transform* Data
 
   - Outcome column was created from the MAX_SEV column 
   - If MAX_SEV = 4 (Fatal Crash), then outcome = 1 
@@ -81,7 +81,7 @@ Bad weather conditions do not equate to more accidents, as shown below many happ
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL/images/transform_vehicle2020_data.png) 
 
 
-### **Load** Data into Postgresql Database
+### *Load* Data into Postgresql Database
 
 #### Create fatal_accident_db in pgAdmin
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Database/ERD/fatal_accident_db.png) 
@@ -95,7 +95,7 @@ Bad weather conditions do not equate to more accidents, as shown below many happ
 #### ERD 
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Database/ERD/fatal_accident_db_ERD.png) 
 
-### **Load** Data
+### Upload Data
 
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL/images/data_upload.png) 
 
@@ -132,6 +132,10 @@ Because of this imbalance, we decided to test models that would help balance the
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/borderlinesmote.png)
 
 ## Final Model Decision
+
+We decided to go with the Native Random Oversampling model for the following reasons
+  - Highest Accuracy (after the data was balanced)
+  - Hightest Recall and F1 Score 
 
 ## Creating Flask App for Model
 The purpose of this app is to give an interactive experience with our machine learning model. Due to project time constraints, we created a new model that didn't include make_and_model and year. Both variables have too many options to write into the html code (make_and_model with 500+ and year 90+). We still used the Native Random Oversampling model for the heroku app.
