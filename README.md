@@ -42,7 +42,11 @@ We hope to answer some of the following questions with our analysis:
 #### [2020 Data](https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/CRSS/2020/)
 
   - We used accident.csv and vehicle.csv for our analysis 
-  - We narrowed down the files to inlcude only columns we believe could likely affect car crash fatalities 
+  - Narrowed down the files to inlcude only columns we believe could likely affect car crash fatalities 
+    - From the accident.csv, region, urbanicity (rural or urban), month, year, day of the week, light condion, weather
+    - From the vehicle.csv, make and model, car year
+    - Note: we did not end up using every variable in our database in our final analysis
+  - Joined accident.csv and vehicle.csv on accident case number
 
 ### Transform Data
 
@@ -53,10 +57,15 @@ We hope to answer some of the following questions with our analysis:
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL/images/transform_accident2019_data.png) 
 #### accident2020 data transformation
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL/images/transform_accident2020_data.png )
+
+  - For accident csvs, removed light condition and weather options that were unknown or weren't specifically reported
+
 #### vehicle2019 data transformation
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL/images/transform_vehicle2019_data.png) 
 #### vehicle2020 data transformation
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL/images/transform_vehicle2020_data.png) 
+
+  - For vehicle csvs, removed two years that are not real
 
 ### Load Data into Postgresql Database
 
@@ -74,12 +83,14 @@ We hope to answer some of the following questions with our analysis:
 
 ### Upload Data
 
+![alt text](https://github.com/JediMasterSlagle/Final/blob/main/ETL/images/data_upload.png) 
+
 ## Machine Learning Process
 
 X: outcome <br />
 y: region, month, light_condtion, weather, make_and_model, year
 
-Started with a Classification Model
+Started with a Classification Model since we are dealing with only categorical data
 
 #### Classfication Model Results
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/images/classification_model.png) 
@@ -100,6 +111,8 @@ Due to the the majority of accidents being non-fatal, are dataset is greatly ske
 #### BalancedRandomForestClassifier Results
 
 #### BorderlineSMOTE Results
+
+## Final Model Decision
 
 ## Creating Flask App for Model
 The purpose of this app is to give an interactive experience with our machine learning model. Due to project time constraints, we created a new model that didn't include make_and_model and year. Both variables have too many options to write into the html code (make_and_model with 500+ and year 90+). We still used the BalancedRandomForestClassifier model for the heroku app.
