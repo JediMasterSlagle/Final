@@ -38,10 +38,8 @@ We hope to answer some of the following questions with our analysis:
 ### Extract Data
   - Data was taken from NHTSA website
 
-#### Link to 2019 Data
-https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/CRSS/2019/
-#### Link to 2020 Data
-https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/CRSS/2020/
+#### [Link to 2019 Data](https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/CRSS/2019/)
+#### [Link to 2020 Data](https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/CRSS/2020/)
 
   - We used accident.csv and vehicle.csv for our analysis 
   - We narrowed down the files to inlcude only columns we believe could likely affect car crash fatalities 
