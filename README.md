@@ -57,7 +57,7 @@ Bad weather conditions do not equate to more accidents, as shown below many happ
   - We used accident.csv and vehicle.csv for our analysis 
   - Narrowed down the files to inlcude only columns we believe could likely affect car crash fatalities 
     - From the accident.csv, accident case number, region, urbanicity (rural or urban), month, year, day of the week, light condion, weather
-    - From the vehicle.csv, accident case number, make and model, car year
+    - From the vehicle.csv, accident case number, make and model, vehicle's year
     - Note: we did not end up using every variable in our database in our final analysis
   - Joined accident.csv and vehicle.csv on accident case number
 
@@ -106,6 +106,8 @@ Started with a Classification Model since we are classifying our data into two c
 Split dataset using scikit-learn's train_test_split()
 X: outcome <br />
 y: region, month, light_condtion, weather, make_and_model, year
+
+** NOTE: year refers to the vehicle's year not the calendar year
 
 #### Classfication Model Results
 ![alt text](https://github.com/JediMasterSlagle/Final/blob/main/Machine%20Learning/Testing%20Models/images/classification_model.png) 
