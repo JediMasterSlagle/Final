@@ -1,0 +1,37 @@
+Self-Assessment
+
+In review of this course first would like to say how much I really did enjoy it after being a bit apprehensive 
+at first!  Such good instruction and being lead toward answers rather than told,  that being said I would have
+to say that learning to be self sufficient and utilize google and stackoverflow for guidance and suggestions
+as the more I learn and find out about the profession as well as the course itself is that with coding 
+(especially syntax) its more about your ability to use these services to and be able to easily find what
+youre looking to achieve which is what I was able to easily achieve and has helped immensely!  I dont know
+how many times I wrote in slack for people to use stack hah..!  While it was slightly difficult at times to
+work with others what whatever reasons,  we did pull together really really well at the end as far as 
+collaboration and I think everyone did a wonderful job.  I would say my greatest challenge was learning
+the fundementals,  github,  using vscode etc,   the coding actually came very naturally to me and I simply
+could not be happier with my decision to persue this career field.
+
+
+
+Team Assessment
+
+ For our final analysis we chose accidents,  obvisouly many methods of cleaning and transformation were
+used such as visual basic and jupyter notebook,  tableau,  heroku, etc.   we were hoping to provide cohesive
+accident predictability using several model types and variables to attain best possible result,  we ended up 
+choosing the BalancedRandomForestClassifier model as it gave us the best outcome at 97%.  the team
+worked extremely well together and was a great project to summarize key components of our learning, and
+we all plan to keep in touch moving forward!
+
+
+
+Summary of Project
+
+Basically to summarize we used a BalancedRandomForestClassifier model to achieve best results after
+completion on data cleaning and loading to our pgadmin database,  we followed this up with a dashboard
+representing casualties as well as more relieving outcomes.  This was a fun interactive dashboard which
+we could break down and see graphically everything by region,  given more time I would have prefered to
+have it broken out by state,  but this would have been a much longer process during ETL as the granularity
+of the source information was only by region.   Followed by a link to our Heroku app which can give 
+possibility outcomes based on our algorithm for future travel.
+
